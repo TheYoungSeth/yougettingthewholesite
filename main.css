@@ -26,10 +26,28 @@ body, html {
 body {
 	font-family: subtitle, Arial, Helvetica, sans-serif;
 	font-size: xx-large;
-	background-color: #282D3C;
+	background: black;
 	scrollbar-width: none;
 	color: whitesmoke;
 }
+
+.bg {
+	position: fixed;
+	height: 210%;
+	width: 210%;
+	z-index: -1;
+	background: url("1.png") repeat;
+	animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+	0% {
+	  transform: translate3d(0, 0, 0);
+	}
+	100% {
+	  transform: translate3d(-1284px, -514px, 0); /* The image width */
+	}
+  }
 
 #real{
 	display: inline-block;
@@ -37,8 +55,9 @@ body {
 	align-self: center;
 	vertical-align: top;
 	align-items: center;
-	padding-left: 5%;
 	text-align: center;
+	width: 40%;
+	padding-left: 4%;
 }
 
 #real img{
@@ -46,8 +65,38 @@ body {
 	border-radius: 10px;
 	box-shadow: 8px 8px 10px grey;
 	align-self: center;
+	width: 90%;
+	transition: 0.13s;
+}
+
+#real img:hover{
+	width: 100%;
 }
 
 #real p{
 	display: block;
+}
+
+.gif {
+	position: fixed;
+	width: 8%;
+	transition: 0.13s;
+}
+
+.gif:hover{
+	width: 10%;
+	align-self: center;
+}
+
+.topright {
+	right: 0;
+}
+
+.bottomleft {
+	bottom: 0;
+}
+
+.bottomright{
+	right: 0;
+	bottom: 0;
 }
