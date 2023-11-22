@@ -1,0 +1,53 @@
+@font-face {
+    font-family: dino;
+    src: url("fonts/dinosaur.ttf");
+}
+
+@font-face {
+    font-family: coffeeextra;
+    src: url("fonts/coffeeextra.ttf");
+}
+
+@font-face {
+    font-family: subtitle;
+    src: url("fonts/SubtitleBd.otf");
+}
+
+@font-face {
+    font-family: subtitleThin;
+    src: url("fonts/Subtitle.otf");
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	font-family: subtitle, Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	background-color: #282D3C;
+	scrollbar-width: none;
+	color: whitesmoke;
+}
+
+#real{
+	display: inline-block;
+	text-align: center;
+	align-self: center;
+	vertical-align: top;
+	align-items: center;
+	padding-left: 5%;
+	text-align: center;
+}
+
+#real img{
+	border: 5px solid white;
+	border-radius: 10px;
+	box-shadow: 8px 8px 10px grey;
+	align-self: center;
+}
+
+#real p{
+	display: block;
+}
